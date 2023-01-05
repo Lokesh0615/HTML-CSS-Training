@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image mapping</title>
+</head>
+
+<body>
+    <form >
+        <table width="500px" height="100p" align="center"  cellspacing="10px" style="border: 2px solid red;">
+            <tr align="center" >
+                <td colspan="2" style="border-radius: 10px;">
+                    <label for="name">Player name</label>
+                   
+                </td>
+            </tr>
+            <tr align="center">
+                <td >
+                    <input type="text" name="name" id="name" placeholder="first name">
+                </td>
+                <td>
+                    <input type="text" name="name" id="name" placeholder="Last name">
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <label for="phone">Phone number</label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <input type="email" name="email" id="email" placeholder="email">
+                </td>
+                <td>
+                    <input type="tel" name="phone" id="phone" placeholder="phone number">
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label for="age">Age</label>
+                </td>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <input type="number" name="age" id="age">
+                </td>
+                <td>
+                    <select name="gender" id="gende">Gender
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="others">others</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+    <!-- <iframe src="https://www.bing.com/search?q=bosch+software+engineer+requirment+in+bangalore&qs=n&form=QBRE&msbsrank=7_7__0&sp=-1&pq=bosch+software+engineer+requirment+in+bangalore&sc=7-47&sk=&cvid=89D7D4DFF32249E585CAFEFC4F4C1208&ghsh=0&ghacc=0&ghpl="  width="700px" height="400px" style="border: 2px solid red; border-radius: 20px;"></iframe> -->
+
+    <!-- <label for="cars">choose car</label>
+    <select name="cars" id="cars">
+        <optgroup label="indian cars" >
+            <option value="volvo">volvo</option>
+            <option value="saab">saab</option>
+        </optgroup>
+        <optgroup label="outside">
+            <option value="audi">audi</option>
+            <option value="mcd">mcd</option>
+        </optgroup>
+    </select>
+     -->
+
+
+
+    <!-- <div>
+        <img src="./image_map.gif" usemap="#mymap">
+        <map name="mymap">
+            <area shape="rect" coords="138,28,200,120" title="my rectangel"
+                href="https://www.google.com/search?q=rectangle&rlz=1C1CHBF_enIN1035IN1035&oq=rect&aqs=chrome.3.69i57j0i67l2j0i67i433j0i67j0i67i131i433j46i433i512j0i433i512j0i131i433i512j0i433i512.5155j0j15&sourceid=chrome&ie=UTF-8"
+                alt="error">
+            <area shape="circle" coords="45,42,27" title="myCircle"
+                href="https://www.google.com/search?q=circle&rlz=1C1CHBF_enIN1035IN1035&sxsrf=ALiCzsaD26uTxwAqzToUCk_b6B15NF5Liw%3A1672392520592&ei=SK-uY7voI9Gt4-EP56mk2Ao&ved=0ahUKEwi7rPXQg6H8AhXR1jgGHecUCasQ4dUDCA8&uact=5&oq=circle&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIHCAAQsQMQQzIHCAAQsQMQQzIHCAAQsQMQQzIHCAAQsQMQQzIHCAAQsQMQQzIHCAAQsQMQQzIECAAQQzIECAAQQzIHCAAQsQMQQzoKCAAQRxDWBBCwAzoHCAAQsAMQQzoICAAQsQMQgwE6CggAELEDEIMBEEM6CwgAEIAEELEDEIMBSgQIQRgASgQIRhgAULMHWKcRYIMXaAJwAXgAgAFoiAHKBJIBAzMuM5gBAKABAcgBCsABAQ&sclient=gws-wiz-serp">
+            <area shape="poly" coords="66,91,97,91,114,117,98,143,67,143,51,117" title="MyExagon"
+                href="https://www.google.com/search?q=hexagon&rlz=1C1CHBF_enIN1035IN1035&sxsrf=ALiCzsaDIH04N0kflKhkVbSt5vBhzjeEeQ%3A1672393033605&ei=SbGuY6HDJLWYseMPht2kqA8&oq=exago&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMg0IABCABBCxAxCxAxAKMgUIABCABDILCC4QgAQQxwEQ0QMyBQgAEIAEMgoIABCABBCxAxAKMgUIABCABDILCC4QgAQQxwEQrwEyCwguEIAEEMcBEK8BMgoIABCABBCxAxAKMg0IABCABBCxAxCDARAKOgcIIxCwAxAnOgoIABBHENYEELADOgcIABCwAxBDOg0IABDkAhDWBBCwAxgBOgwILhDIAxCwAxBDGAI6DwguENQCEMgDELADEEMYAjoFCAAQkQI6EQguEIAEELEDEIMBEMcBENEDOggIABCxAxCDAToLCC4QgAQQsQMQgwE6CwgAEIAEELEDEIMBOgcIIxDqAhAnOg0ILhDHARDRAxDqAhAnOgwILhDqAhC0AhBDGAM6DAgAEOoCELQCEEMYAzoECCMQJzoKCC4QxwEQrwEQJzoECAAQQzoHCC4Q1AIQQzoECC4QQzoHCAAQsQMQQzoICAAQgAQQsQNKBAhBGABKBAhGGAFQkg1Yki9gxz9oBHABeACAAXSIAeAEkgEDMi40mAEAoAEBsAEUyAERwAEB2gEGCAEQARgJ2gEGCAIQARgI2gEGCAMQARgB&sclient=gws-wiz-serp">
+        </map>
+    </div>
+    <br>
+    <hr>
+    <div>
+        <img src="./social meadia icons mapping.png" alt="eroor" usemap="#social media icons">
+        <map name="social media icons">
+
+            <area shape="circle" coords="51,46,23" title="Facebook" href="https://www.facebook.com/login/">
+            <area shape="circle" coords="121,46,22" title="Instagram" href="https://www.instagram.com/accounts/login/">
+            <area shape="circle" coords="197,44,16" title="twitter" href="https://twitter.com/i/flow/login">
+            <area shape="circle" coords="265,44,23" title="Music"
+                href="https://wynk.in/music/album/login/um_00602547389947">
+            <area shape="circle" coords="47,114,14" title="Youtube"
+                href="https://www.google.com/search?q=youtube+login&bih=591&biw=1280&rlz=1C1CHBF_enIN1035IN1035&hl=en&sxsrf=ALiCzsYNjkM7TkBzBtRPRld2-JopaLbGog%3A1672394013434&ei=HbWuY4STGvCs4-EPqYKOkAo&ved=0ahUKEwjEleGYiaH8AhVw1jgGHSmBA6IQ4dUDCA8&uact=5&oq=youtube+login&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIJCAAQBxAeEPEEMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgUIABCRAjIGCAAQBxAeMgYIABAHEB46CggAEEcQ1gQQsAM6BwgAELADEEM6CAgAEAcQHhAKSgQIQRgASgQIRhgAUI0KWKkYYK4eaAJwAXgAgAF1iAGdBZIBAzUuMpgBAKABAcgBCsABAQ&sclient=gws-wiz-serp">
+            <area shape="circle" coords="121,114,15" title="Telegram" href="https://telegr.am/user_mgt/login"> 
+            <area shape="circle" coords="197,113,10" title="whatsapp" href="https://www.whatsapp.com/">
+            <area shape="circle" coords="264,112,14" title="LinkedIn" href="https://www.linkedin.com/login">
+
+        </map>
+    </div>
+    <hr >
+    <div>
+        <a href="./image_map.gif">helll</a>
+        
+    </div>
+    -->
+
+</body>
+
+</html>
