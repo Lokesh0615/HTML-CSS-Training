@@ -1,0 +1,23 @@
+a:link{
+    color: blue;
+    background-color: transparent; 
+    text-decoration: none;  
+    
+}
+
+a:visited{
+    color: rgb(239, 19, 19);
+    background-color: transparent;
+}
+a:hover{
+    /* while u moe the mouse above the link, link color will change */
+    color: brown;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active{
+    /* while cliking the link, the link color will change */
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: underline;
+}
