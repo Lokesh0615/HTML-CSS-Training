@@ -1,0 +1,19 @@
+.box{
+    font-size: 3px;
+    padding: 10px 10px;
+    margin: 10px 19px;
+    border: 3px solid blue;
+    background-color: rgb(67, 231, 141);
+    width: 200px;
+    box-sizing: border-box;
+
+}
+img{
+    border-radius: 10px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* background-attachment:; */
+}

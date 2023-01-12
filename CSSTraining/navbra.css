@@ -1,0 +1,64 @@
+
+/* vertical nav bar 
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: aqua;
+    height: 100px;
+    position: fixed;
+    overflow-y: scroll;
+
+}
+li a{
+    display: block;
+    color: rgb(4, 26, 46);
+    text-decoration: none;
+}
+.homebutton{
+    background-color: rgb(13, 168, 132);
+    text-decoration: none;
+
+}
+li a:hover:not(.homebutton){
+    background-color: rgb(179, 164, 227);
+    border-bottom: 2px solid red;
+}*/
+
+
+/* horizonatla navbar */
+ body{
+    overflow: scroll;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(196, 148, 148);
+    overflow: hidden;
+    border: 2px solid black; 
+    /* to stick the nav bar at top */
+    top: 0;
+    position: sticky;
+    
+}
+ li{
+    float: left;
+    
+}
+li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    border-right: 1px solid white;
+    
+} 
+li a:hover:not(.homebutton){
+    background-color: aqua;
+}
+.homebutton{
+    background-color: #0bbe5cc9;
+} 

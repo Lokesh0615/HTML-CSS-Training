@@ -1,0 +1,59 @@
+/* a:link{
+    color: aqua;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    color: blueviolet;
+}
+a:active{
+    color:brown
+} */
+/* .ok:hover{
+    color: brown;
+    font-size: 20px;
+} */
+/* a{
+    display: none;
+}
+div:hover a{
+    display: inline;
+    background-color: rgb(5, 52, 52);
+} */
+
+/* p a:first-child{
+    background-color: rgb(230, 17, 17);
+} */
+
+/* p:first-child a{
+    background-color: aqua;
+} */
+
+/* p:first-of-type a{
+    background-color: blue;
+} */
+
+ /* div :nth-child(2) {
+    background-color: brown;
+} */
+
+/* .ok:target{
+    background-color: antiquewhite;
+} */
+/* #news{
+    display: none;
+}
+#news:target {
+    display: block;
+    background-color: rgb(225, 225, 136);
+} */
+
+/* .tab div{
+    display: none;
+}
+.tab div:target{
+    display: block;
+} */
+
+
