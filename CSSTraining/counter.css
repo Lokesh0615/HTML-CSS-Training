@@ -1,0 +1,25 @@
+/* .section{
+    counter-reset: section;
+}
+h2::before{
+    counter-increment: section;
+    content:  "Section. " counter(section) " ";
+} */
+
+.section{
+    list-style-type: none;
+    counter-reset: section;
+}
+.section li::before{
+    counter-increment: section;
+    content: counter(section);
+}
+.subsection{
+    list-style-type: none;
+    counter-reset: subsection;
+}
+.subsection li::before{
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) ".";
+}
+

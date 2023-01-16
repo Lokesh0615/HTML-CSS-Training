@@ -1,0 +1,30 @@
+input[type=text], select{
+    display: block;
+    /* padding: 10px; */
+    /* margin: 10px; */
+    padding: 20px ;
+    border: none;
+    border-radius: 4px;
+    margin: 8px 0px ;
+    width: 100%;
+    box-sizing: border-box;
+    /* cursor: pointer; */
+}
+input[type=submit]{
+    width: 100%;
+    background-color: rgb(56, 181, 39);
+    margin: 8px 0px;
+    border: none;
+    padding: 8px 5px;
+    cursor: pointer;
+}
+
+input[type*=t]:focus{
+    border-color: antiquewhite;
+}
+
+div{
+    background-color: rgba(173, 179, 184, 0.788);
+    padding: 20px ;
+    border-radius: 10px;
+}

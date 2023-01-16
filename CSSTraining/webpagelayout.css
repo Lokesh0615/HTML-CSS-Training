@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+div{
+    /* border: 2px solid rgb(27, 6, 3); */
+    /* height: 50px; */
+    margin: 5px 0px;
+}
+.header{
+    height: 40px;
+    background-color: rgb(15, 195, 235);
+}
+.navbar{
+    height: 30px;
+    background-color: rgb(76, 153, 201);
+}
+.leftrow{
+    float: left;
+    width: 70%;
+    
+    /* background-color: rgb(19, 186, 33); */
+}
+.rightrow{
+    float: left;
+    width: 30%;
+    /* background-color: rgb(201, 238, 68); */
+}
+ [class=card]{
+    background-color: rgb(237, 153, 153);
+    display: block;
+}
