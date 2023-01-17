@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .ok{
+            display: flex;
+            margin: 45px;
+        }
+        .first {
+            width: 50px;
+            height: 50px;
+            border: 2px solid red;
+            background-color: aqua;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+            
+
+        }
+        .fi {
+            width: 50px;
+            height: 50px;
+            border: 2px solid red;
+            background-color: aqua;
+            animation-name: example1;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            position: relative;
+
+        }
+
+        /* @keyframes example {
+            25% {background-color: rgb(220, 29, 29);}
+            50% {background-color: rgb(22, 199, 149);}
+            100% {background-color: rgb(52, 7, 83);}
+            
+        } */
+
+        /* @keyframes example {
+            from{background-color: rgb(222, 68, 68); left:0px; top: 0px;}
+            to{background-color: rgb(12, 155, 81); left:0px; top:200px;}
+        } */
+
+        @keyframes example {
+            0% {
+                background-color: rgb(230, 10, 10);
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: rgb(47, 208, 66);
+                left: 50px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: rgb(54, 18, 213);
+                left: 50px;
+                top: 50px;
+            }
+
+            75% {
+                background-color: rgb(37, 6, 66);
+                left: 0px;
+                top: 50px;
+            }
+
+            100% {
+                background-color: rgb(243, 195, 93);
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        @keyframes example1 {
+            0% {
+                background-color: rgb(230, 10, 10);
+                left: 50px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: rgb(47, 208, 66);
+                left: 50px;
+                top: 50px;
+            }
+
+            50% {
+                background-color: rgb(54, 18, 213);
+                left: 0px;
+                top: 50px;
+            }
+
+            75% {
+                background-color: rgb(37, 6, 66);
+                left: 0px;
+                top: 0px;
+            }
+
+            100% {
+                background-color: rgb(243, 195, 93);
+                left: 50px;
+                top: 0px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="ok">
+        <div class="first"></div>
+        <div class="fi"></div>
+        <div class="first"></div>
+        <div class="fi"></div>
+        <div class="first"></div>
+        <div class="fi"></div>
+    </div>
+    <div class="ok">
+        <div class="first"></div>
+        <div class="fi"></div>
+        <div class="first"></div>
+        <div class="fi"></div>
+        <div class="first"></div>
+        <div class="fi"></div>
+    </div>
+</body>
+
+</html>

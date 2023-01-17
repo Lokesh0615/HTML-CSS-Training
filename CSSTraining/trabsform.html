@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+
+      
+       .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 2px solid blue;
+        width: 300px;
+        height: 100px;
+        transition: all 4s ease ;
+        margin:10px ;
+        background-color: rgb(23, 181, 190);
+       }
+
+       /* .container:hover{
+        transform: rotate(-180deg);
+        transition-duration: 5s;
+       } */
+
+       .box{
+        /* margin-top: 50px; */
+        background: rgb(218, 98, 98);
+        border: 2px solid black;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-in-out ;
+        /* transition-property: width;
+        transition-delay: 2s;
+        transition-duration: 3s;
+        transition-timing-function: ease-in-out; */
+
+       }
+       .box:hover{
+        
+        /* transform: rotateY(360deg);3d */
+
+        /* 2d */
+        transform: rotate(180deg);
+        /* margin-top: 0px; */
+        transform-origin: 20px, 20px;
+        align-items: none;
+        transform-style: preserve-3d;
+       
+        /* transition-duration: 1s; */
+        /* transition-delay: 2s; */
+        /* transform: scale(-1); */
+        /* transform: scaleX(2); */
+        /* transform: scaleY(2); */
+        /* transform: skew(35deg); */
+        /* transform: translate(50px); */
+        /* transform: translate( 20px); */
+        /* transform: matrix(2, -0.3, 0, 1.5, 2, 0); */
+       }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">textt</div>
+        <div class="box">textt</div>
+        <div class="box">textt</div>
+        <div class="box">textt</div>
+    </div>
+</body>
+</html>
