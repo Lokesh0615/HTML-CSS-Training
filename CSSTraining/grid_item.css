@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    background-color: rgb(219, 235, 232);
+    padding: 20px;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 20px;
+}
+
+.grid-container>div{
+    background-color: rgb(3, 65, 65);
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.grid-container .grid-item1{
+    /* grid-column: 1/span 6; */
+    /* grid-column: 1/6; */
+    /* grid-row: 2/ 4; */
+
+    /* grid-area:1 / 2 / 8 / 6 ; */
+    grid-area: 2 / 1 / span 2 / span 3;
+
+}
+
