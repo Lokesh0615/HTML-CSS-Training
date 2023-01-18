@@ -1,0 +1,22 @@
+
+:root{
+   --a:#1e90ff;
+
+   --w:300px;
+}
+
+body{
+    background-color:var(--a);
+}
+
+h3{
+    border-bottom: 2px solid rgb(174, 15, 15);
+    /* color: white; */
+}
+.container{
+    background-color: whitesmoke;
+    padding: 5px;
+    color: var(--a);
+    width: var(--w);
+    color: rgb(73, 162, 240);
+}

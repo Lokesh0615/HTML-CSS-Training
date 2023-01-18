@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+  }
+
+.nav{
+    display: flex;
+    background-color: rgb(13, 205, 205);
+    justify-content: flex-start;
+    /* padding: 10px; */
+    height: auto;
+}
+.nav a{
+    /* display: flex; */
+    background-color: rgb(230, 141, 141);
+    text-decoration: none;
+    padding: 15px ;
+    margin-right: 2px ;
+    color: whitesmoke;
+}
+.hide{
+    display: flex;
+    width: 100%;
+    background-color: antiquewhite;
+    justify-content: center;
+}
+.order{
+    display:block;
+    /* background-color: rgb(21, 146, 191); */
+    /* justify-content: flex-start; */
+    /* padding: 20px ; */
+}
+.order a{
+    display: block;
+    background-color: rgb(44, 57, 65);
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px 20px;
+    margin: 3px 0px;
+    min-width: 150px;
+    /* width: 100%; */
+}
+.footer{
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    color: aqua;
+    background-color: rgb(186, 143, 143);
+}
+
+
+[class*=col-]{
+    float: left;
+    padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media screen and (max-width:500px) {
+    [class*=col-]{
+        /* display: block; */
+        width: 100%;
+
+    }    
+    .hide{
+        display: none;
+    }
+}
+@media screen and (max-width:700px) {
+    .information{
+        /* display: block; */
+        width: 100%;
+    }
+}

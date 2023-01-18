@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+.pagination{
+    display:inline-block;
+}
+
+.pagination a{
+    color: black;
+    float: left;
+    width: 40px;
+    padding: 10px ;
+    margin-right: 5px;
+    text-align: center;
+    border: 1px solid black;
+    text-decoration: none;
+    transition: all .5s;
+}
+.pagination a:hover{
+    background-color: rgb(211, 201, 201);
+}

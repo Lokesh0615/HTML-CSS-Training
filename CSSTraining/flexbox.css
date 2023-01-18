@@ -1,0 +1,46 @@
+.flex-container{
+    background-color: rgb(28, 209, 241);
+    display: flex;
+    height: 200px;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* flex-flow is a property use to give both flex direction and wrap */
+    /* flex-flow: column nowrap; */
+    /* flex-flow: row wrap; */
+    justify-content: center;
+    /* justify-content: end; */
+    /* justify-content: space-around; */
+
+    align-items: center;
+    /* align-items: baseline; */
+    /* align-items: flex-end; */
+    /* align-items: stretch; */
+
+    /* align-content: center; */
+    /* align-content: flex-end; */
+    /* align-content: space-around; */
+    /* align-content: stretch; */
+
+
+}
+.flex-container div{
+    background-color: #f1f1f1;
+    font-size:20px;
+    padding:20px;
+    margin:  10px;
+  
+}
+/* .flex-container #self{ */
+    /* align-self: flex-start; */
+    /* flex-grow: 6; */
+    /* flex-shrink: 0; */
+    /* flex-basis: 50px; */
+    /* order: 2; */
+/* } */
