@@ -1,4 +1,5 @@
-div{
+div {
+    /* display: none; */
     width: 30%;
     /* display: flex; */
     /* align-content: center; */
@@ -6,28 +7,59 @@ div{
     position: relative;
     /* align-self: center; */
     margin: auto;
-    /* margin-top: 100px; */
+    margin-top: 150px;
     animation-name: example;
-    animation-duration: 6s;
-    animation-delay: .4s;
+    animation-duration: 1s;
+    animation-delay: 0s;
     animation-direction: normal;
+    visibility: visible;
+    background-color: aqua;
 
 }
+
 @keyframes example {
-    0%{
+    from {
+        /* display: none; */
+        visibility: hidden;
+        top: -150px;
+         /* transition: all; */
+        height: 0px;
+        /* background-color: rgb(199, 124, 26); */
+        /* width: 0px;  */
+        /* transform: scale(1);
+        transition-duration: .1s;*/
+        /* transition-timing-function: ease;  */
+    }
+
+    to {
+        display: block;
+        /* visibility: hidden; */
+        top: 0px;
+        /* transform: scale(2); */
+        /* transform: translate(0px 150px); */
+        /* transform: scale(0); */
+        /* transform-style: flat;
+        transition-duration: 4s;
+        transition-timing-function: ease-in-out; */
+    }
+
+    /* 
+    0%, div{
         top: 00px;
         height: 0%;
-        display: none;
-
+        transform: none;
+    }
+    25%{
+        top: 25px;
     }
     50%{
         top: 50px;
-        /* height: 50%; */
+    }
+    75%{
+        top: 75px;
     }
     100%{
         top:100px;
         display: block;
-        /* height: 100%; */
-    }
+    } */
 }
-

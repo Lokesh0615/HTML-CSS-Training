@@ -1,0 +1,87 @@
+div {
+    /* display: none; */
+    width: 30vw;
+    min-width: 250px;
+    /* display: flex; */
+    /* align-content: center; */
+    /* align-items: center; */
+    position: relative;
+    /* align-self: center; */
+    margin: auto;
+    border: 2px solid royalblue;
+    margin-top: 150px;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-delay: 0.0001s;
+    animation-direction: normal;
+    box-shadow: 0px 2px 2px 0px rgba(108, 102, 102, 0.8);
+    padding: 10px;
+
+    /* visibility: visible; */
+
+} input{
+    width: 27vw;
+    min-width: 220px;
+    margin: 0px 0px  10px;
+
+}
+button{
+    width: 100%;
+    background-color: rgb(14, 210, 24, 0.6);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+button:hover{
+    background-color:rgb(14, 210, 24, 0.9) ;
+}
+
+@keyframes example {
+    from {
+        display: none;
+        visibility: hidden;
+        top: -500px;
+        
+        /* transform: translate(0px, -500px);
+         transition: all 1s ease; */
+        /* height: 400px; */
+        /* background-color: rgb(199, 124, 26); */
+        /* width: 0px;  */
+         /* transform: scale(0); */
+       /* transition-duration: 4s; */
+        /* transition-timing-function: ease;  */
+    }
+
+    to {
+        display: block;
+        /* visibility: hidden; */
+        top: 0px;
+        /* transform: scale(1); */
+        /* transform: translate(0px, -300px); */
+        /* transform: scale(0); */
+        /* transform-style: flat;*/
+        /* transition-duration: 4s;  */
+        /* transition-timing-function: ease-in-out; */
+    }
+
+    /* 
+    0%, div{
+        top: 00px;
+        height: 0%;
+        transform: none;
+    }
+    25%{
+        top: 25px;
+    }
+    50%{
+        top: 50px;
+    }
+    75%{
+        top: 75px;
+    }
+    100%{
+        top:100px;
+        display: block;
+    } */
+}
