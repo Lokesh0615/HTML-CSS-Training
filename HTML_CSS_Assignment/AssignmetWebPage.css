@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+}
+.homePageContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto ;
+    grid-template-rows: auto auto auto auto auto ;
+    padding: 30px;
+    border: 2px solid red;
+    background: url(./AssignmentBackground.png)  ;
+}
+
+/* home page grid  */
+#webPageTitleLeftContent{grid-area: 1/1/1/5;}
+#webPageTitleRightContent{grid-area: 1/5/1/13;}
+#navBar{grid-area: 2/1/2/13;}
+#sideText{grid-area: 3/1/4/8;}
+#homePageBurgerImage { grid-area: 3/8/4/13;}
+
+@media screen and (max-width:500px) {
+   .homePageContainer{
+        display: flex;
+        flex-direction: column;
+    } 
+    #webPageTitleRightContent {
+        display: flex;
+        justify-content:last baseline ;
+        height: 50px;
+        align-items: center;
+        padding-left: 15px;
+    }
+    #webPageTitleRightContent #bikeIcon{
+        margin-right: 10px;
+    }
+
+    #navBar-content{
+       text-align: left;
+       margin: 0px;
+    }
+    #navBar-content a {
+        display:inline-block;
+        width: 40%;
+        margin: 10px 10px;
+        padding: 10px ;
+        /* text-align: left; */
+    }
+
+    /* content page */
+    .contentPage{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* padding: none; */
+    }
+    #contentPageleft{
+        width: 100%;
+    }
+
+    /* .contentPage3 */
+    .contentPage3{
+        flex-direction: column;
+        /* padding: 10px 30px; */
+    }
+    .burgerCard{
+        padding: 20px; 
+    }
+
+    /* contentCard */
+    .contentCard{
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* .contentPage4 */ontentPage4Image1, .contentPage4Image2, .contentPage4Image3{
+        display: none;
+    }
+
+    .contentPage4Form{
+        width: 100%;
+    }
+    .contentPage4FormInput{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* contentpage5 */
+
+    .contentPage5BottomContent, .contentPage5ParagraphAndEmail{
+        flex-direction: column;
+        
+    }
+    .contentPage5BottomRightIcon{
+       /* flex-direction: column; */
+        justify-content: center;
+    } 
+    .contentPage5EmailTag{
+        margin:0px;
+    }
+
+}
+
+#webPageTitleLeftContent {
+    font-size: x-large;
+    min-width: 200px;
+    padding-left: 10px;
+}
+#webPageTitleLeftContent i{
+    font-size: xx-large;
+}
+
+#webPageTitleRightContent {
+    /* grid-area: 1/8/1/13; */
+    text-align: right;
+    font-size: small;
+}
+#webPageTitleRightContent i{
+    font-size: medium;
+}
+
+#navBar {
+    text-align: right;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    padding: 5px 0px 20px 0px;
+}
+
+#navBar-content a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px 10px 10px;
+    margin-left: 10px;
+    /* background-color:rgb(100, 91, 91, 0.3) ; */
+    border-radius: 10px;
+}
+
+#navBar-content a:hover {
+    background-color: rgb(160, 152, 152);   
+}
+
+#sideText{
+    display: inline-block; 
+    min-width: 70%;
+    
+} 
+#sideText span{
+    position: relative;
+    /* font-size:1vw; */
+    font-size:clamp(7px, 1vw , 20px);
+    padding: 5px;
+    border: 1.5px dashed rgb(90, 25, 25);   
+    top:clamp(0px, 8vw , 90px);
+}
+#sideText h1{
+    font-size:clamp(45px, 10vw , 120px);
+    text-shadow: 2px 2px  white;
+
+}
+#sideText h2{
+    font-size:clamp(22px, 3.5vw , 120px);
+    /* font-size: 3.5vw; */
+    position: relative;
+    /* top: -110px; */
+    top:clamp(-120px, -8.5vw, -40px);
+    /* top: clamp(-200px,-10vw, 0px); */
+    text-shadow: 1.5px 1.5px  white;
+}
+
+#homePageBurgerImage img{
+    width: 100%;
+    min-width: 75%;
+    min-height: 250px;
+    height: auto;
+}
+
+/* contentpage */
+
+.contentPage{
+    display: flex;
+    padding: 50px;
+    border: 2px solid black;
+    justify-content: space-between;
+}
+#contentPageleft{
+    height:clamp(155px, 30vw, 400px);
+    margin-right: 2vw;
+   
+}
+ .image1{
+    height: clamp(100px, 30vw, 400px);
+    width: 100%;
+    border-radius: 10px;
+}
+.contentPageTopText{
+    position: relative;
+    top: -30vw;
+    color: whitesmoke;
+}
+.text1{
+    font-size: 1.5vw;
+    margin-left: 1vw;
+}
+.text2{
+    font-size: 2vw;
+    line-height: 10px;
+    margin-left: 1vw;
+}
+
+#contentPageRight{
+    display: flex;
+    flex-direction: column;
+    /* width: 47%; */
+    height:clamp(170px, 30vw, 400px);
+}
+.image2{
+    height: clamp(75px, 13vw, 180px);
+    width: 100%;
+    border-radius: 10px;
+}
+.contentPageRightContent{
+    margin: 1vw;
+     height: clamp(75px, 13vw, 180px);;
+}
+.contentPageTopRightText{
+    display: inline-block;
+    color: whitesmoke;
+    position: relative;
+    top: -14.5vw;
+    
+}
+/* contentPgae2 */
+.contentPgae2{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid blue;
+    /* width: 65%; */
+}
+
+.contentPgae2 button{
+    border: none;
+    width: auto;
+    padding: 10px 20px;
+    background-color: rgb(230, 156, 19) ;
+}
+.contentPgae2 button:hover{
+    background-color: rgb(175, 117, 9);
+    color: whitesmoke;
+}
+
+/* contentPage3 */
+.contentPage3{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    /* float: left; */
+    height: auto;
+    /* width: auto; */
+}
+
+.burgerCard{
+    text-align: center;
+    /* border: 2px solid red; */
+    /* padding: 50px; */
+    padding: 5vw;
+    min-width: 150px;  
+}
+.image3{
+    width: 100%;
+    /* filter: drop-shadow(5px 2px 2px black); */
+}
+.orderBtn{
+    border: none;
+    background-color: red;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.orderBtn:hover{
+    background-color: rgb(223, 16, 16);
+}
+
+/* contentcard */
+.contentCard{
+    display: flex;
+    /* border: 2px solid black; */
+    margin: 50px;
+    padding: 10px;
+    box-shadow: 8px 8px 6px rgb(221, 215, 215);
+}
+.contentCardText{
+    width: 50vw;
+    display: inline-block;
+    margin: 20px;
+}
+
+.contentCardImage{
+    margin: 20px;
+    width: 50vw;
+    /* height: 100%; */
+}
+.contentCardImage img{
+    width: 100%;
+    min-width: 150px;
+    min-height: 100%;
+}
+
+/* contentPage4 */
+.contentPage4{
+    display: grid;
+    grid-template-columns: 8.333% 8.333% 8.333%  8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333%;
+    border: 2px solid green;
+}
+.contentPage4Image1{
+    grid-area: 1/1/2/3;
+    position: relative;
+    left: -7vw;
+}
+.contentPage4Image1 img{
+    width: 100%;
+    min-width: 100px;
+    min-height: 100px;
+}
+.contentPage4Image2{
+    grid-area: 2/2/3/3;
+}
+.contentPage4Image2 img{
+    width: 100%;
+    min-width: 70px;
+    height: 15vw;
+    min-height: 200px;
+}
+.contentPage4Text{
+    grid-area: 1/2/2/ 12;
+    text-align: center;
+}
+.contentPage4Form{
+    grid-area: 2/4/3/10;
+    text-align: center;
+}
+.contentPage4FormInput{
+    float: left;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+}
+.contentPage4FormInput input{
+    width: 100%;
+    border: 1px solid black;
+    padding: 13px;
+    margin: 10px;
+}
+.contentPage4FormInput input:hover{
+    background-color: rgb(225, 216, 216);
+}
+.tableBtn{
+    width: 100%;
+    padding: 13px;
+    margin: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bolder;
+}
+.tableBtn:hover{
+    background-color:  rgb(223, 16, 16);
+}
+.contentPage4Image3{
+    grid-area:2 /10/5/13;
+    position: relative;
+    /* right: -5vw; */
+   
+
+}
+.contentPage4Image3 img{
+    width: 100%;
+    height: 25vw;
+    min-height: 200px;
+    border-top-left-radius: 70%;
+    border-bottom-left-radius: 70%;
+    /* border-top-right-radius: 70%; */
+    /* border-bottom-right-radius: 70%; */
+    /* border-start-start-radius: 50%; */
+    box-shadow: 10px 10px 10px  black;
+    clip: circle(50%, 0,0 );
+    
+}
+
+
+/* conentpage5 */
+.contentPage5{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpxYYe8S4SUcYx__pNL-95ofantSxFc8RXbQ&usqp=CAU") no-repeat center;
+    background-size: cover;
+    color: white;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentPage5Icon{
+    font-size: 40px;
+    margin: 60px 0px 10px;
+}
+#burgerIcon2{
+    margin-right: 0.1vw;
+    font-size:clamp( 8px, 10vw, 50px);
+}
+.contentPage5Icon span{
+    font-size:clamp( 5px, 7vw, 35px);
+}
+.contentPage5ParagraphAndEmail{
+    display: flex;
+    justify-content: space-between;
+    padding-right: clamp(10px, 19vw, 200px);
+    margin: 00px 0px 80px;
+}
+#paragraph{
+    width: 45%;
+    min-width: 250px;
+    /* margin-right: 20%; */
+    white-space: normal;
+
+}
+.contentPage5EmailTag{
+    /* margin: 5px 30px 0px 30px; */
+    /* display: flex; */
+    position: relative;
+    /* right: -15vw; */
+}
+.contentPage5EmailTag i{
+    color: white;
+    /* min-width: 50px; */
+}
+
+.contentPage5BottomContent{
+    display: flex;
+    justify-content: space-between;
+}
+.contentPage5BottomRightIcon{
+    display: flex;
+    text-align: right;   
+}
+.contentPage5BottomRightIcon a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    padding: 9px 9px 8px 9px;
+    margin: clamp(2px, 0.8vw, 10px);
+    font-size: clamp(15px, 1vw, 20px);  
+}
+.contentPage5BottomRightIcon a:hover{
+    background-color: rgb(225, 216, 216);
+}

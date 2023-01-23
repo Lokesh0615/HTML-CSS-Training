@@ -1,0 +1,10 @@
+lessthan 500px
+ change 500 to 550px
+
+
+
+
+lessthan 400px 375
+change burger text height
+
+lesthan 300px change verything
