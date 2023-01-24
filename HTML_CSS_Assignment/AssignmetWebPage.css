@@ -22,9 +22,12 @@
         display: flex;
         flex-direction: column;
     } 
+    #webPageTitleLeftContent{
+        text-align: center;
+    }
     #webPageTitleRightContent {
         display: flex;
-        justify-content:last baseline ;
+        justify-content: center ;
         height: 50px;
         align-items: center;
         padding-left: 15px;
@@ -34,7 +37,7 @@
     }
 
     #navBar-content{
-       text-align: left;
+       text-align: center;
        margin: 0px;
     }
     #navBar-content a {
@@ -127,9 +130,8 @@
     display: inline-block;
     text-decoration: none;
     color: black;
-    padding: 10px 0px 10px 10px;
+    padding: 10px;
     margin-left: 10px;
-    /* background-color:rgb(100, 91, 91, 0.3) ; */
     border-radius: 10px;
 }
 
