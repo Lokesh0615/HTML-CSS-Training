@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./submitForm.css">
+    <link rel="stylesheet" href="./AssignmetWebPage.css">
+    <script src="https://kit.fontawesome.com/6ac93262d0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="homePageContainer">
+        <div id="webPageTitleLeftContent">
+            <i id="burgerIcon" class="fa-solid fa-burger"></i>
+            <span>BURGER HOUSE</span>
+        </div>
+        <div id="webPageTitleRightContent">
+            <i id="bikeIcon" class="fa-solid fa-motorcycle"></i>
+            <span>Express Delivery +1 234 567 890</span>
+        </div>
+        <nav id="navBar">
+            <div id="navBar-content">
+                <a href="./AssignmentWebPage.html">HOME</a>
+                <a href="./contentPage.html">MENU</a>
+                <a href="./ourStroty.html" >OUR STORY</a>
+                <a href="./contactUs.html">CONTACT US</a>
+                <a href="./submitform.html" >BOOK TABLE</a>
+            </div>
+        </nav>
+        <div id="sideText">
+            <span>IT IS A GOOD TIME FOR THE GREAT TASTE OF BURGERS</span>
+            <h1 id="bugerText">BURGER</h1>
+            <h2>WEEK</h2>
+        </div>
+        <div id="homePageBurgerImage">
+            <img src="./homepageburger.PNG" alt="burger image">
+        </div>
+    </div>
+
+    <div >
+        <form>
+                <div class="foodOrderForm">
+                    <fieldset>
+                        <legend>FOOD FORM</legend>        
+                    <div class="formContent">
+                        <div class="formContentItems">
+                            <label for="name">NAME</label>
+                            <input type="text" name="name" id="name" placeholder="NAME" required>
+                        </div>
+                        <div class="formContentItems">
+                            <label for="city">SELECT CITY</label>
+                            <select name="city" id="city" required>
+                                <option value="SELECT CITY" hidden>SELECT CITY</option>
+                                <option>BANGALORE</option>
+                                <option>MYSORE</option>
+                                <option>CHENNAI</option>
+                                <option>MUMBAI</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <div class="formContentItems">
+                            <label for="tableNumber">TABLE NUMBER</label>
+                            <input list="tableNumber" required placeholder="TABLE NUMBER" required>
+                            <datalist id="tableNumber">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </datalist>
+                        </div>
+                        <div class="formContentItems">
+                            <label for="numberOfPeople">NO. OF PEOPLE</label>
+                            <input title="max 5" type="text" name="numberOfPeople" id="numberOfPeople"
+                                placeholder="NUMBER OF PEOPLE" max="5" required>
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <div class="formContentItems">
+                            <label for="date">DATE</label>
+                            <input type="date" name="date" id="date" required>
+                        </div>
+                        <div class="formContentItems">
+                            <label for="time">TIME</label>
+                            <input type="time" name="time" id="time" required>
+                        </div>
+
+                    </div>
+                    <div class="formContent">
+                        <div class="formContentItems">
+                            <label for="water"> WATER BOTTLE</label>
+                            <input type="radio" name="water" id="bislery">
+                            <label for="bislery">BISLERY</label>
+                            <input type="radio" name="water" id="kinley">
+                            <label for="kinley">KINLEY</label>
+                            <input type="radio" name="water" id="coldwater">
+                            <label for="coldwater">COLD WATER</label>
+                        </div>
+
+                    </div>
+                    <div class="formContent">
+                        <div class="formContentItems">
+                            <label for="food">FOOD</label>
+                            <input type="checkbox" name="food" id="biriyani">
+                            <label for="biriyani">BIRIYANI</label>
+                            <input type="checkbox" name="food" id="kabab">
+                            <label for="kabab">KABAB</label>
+                            <input type="checkbox" name="chillyChiken" id="chillyChiken">
+                            <label for="chillyChiken">CHILLY CHIKEN</label>
+
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <div class="formContentItems">
+                            <input class="btn" type="submit" value="SUBMIT">
+                            <input class="btn" type="reset" value="RESET">
+                        </div>
+                    </div>
+                </fieldset>
+                </div>
+            
+        </form>
+    </div>
+
+</body>
+</html>

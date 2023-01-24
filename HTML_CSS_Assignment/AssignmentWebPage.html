@@ -12,9 +12,7 @@
 
 <body>
 
-
     <div class="homePageContainer">
-        <!-- <div id="webPageTitle"> -->
         <div id="webPageTitleLeftContent">
             <i id="burgerIcon" class="fa-solid fa-burger"></i>
             <span>BURGER HOUSE</span>
@@ -23,21 +21,15 @@
             <i id="bikeIcon" class="fa-solid fa-motorcycle"></i>
             <span>Express Delivery +1 234 567 890</span>
         </div>
-        <!-- </div> -->
         <nav id="navBar">
             <div id="navBar-content">
-                <a href="#">HOME</a>
-                <a href="#">MENU</a>
-                <a href="#">OUR STORY</a>
-                <a href="#">CONTACT US</a>
+                <a href="./AssignmentWebPage.html">HOME</a>
+                <a href="./contentPage.html">MENU</a>
+                <a href="./ourStroty.html" >OUR STORY</a>
+                <a href="./contactUs.html">CONTACT US</a>
+                <a href="./submitform.html" >BOOK TABLE</a>
             </div>
         </nav>
-        <!-- <div id="sideText">
-            <span>IT IS A GOOD TIME FOR THE GREAT TASTE OF BURGERS</span>
-            <h1>BURGER</h1>
-            <h3>WEEK</h3>
-        </div> -->
-
         <div id="sideText">
             <span>IT IS A GOOD TIME FOR THE GREAT TASTE OF BURGERS</span>
             <h1 id="bugerText">BURGER</h1>
@@ -47,8 +39,8 @@
             <img src="./homepageburger.PNG" alt="burger image">
         </div>
     </div>
-
-    <div class="contentPage">
+    
+    <!-- <div class="contentPage">
         <div id="contentPageleft">
             <img class="image1"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUitr3yqzOTtwaUjyazG0IO0YtjP3ZHTx9eBjnoSxrhNSdggkyxlMG25YZQ18vMfYJkVQ&usqp=CAU"
@@ -79,15 +71,16 @@
             </div>
         </div>
 
-    </div>
-    <div class="contentPgae2">
+    </div> -->
+
+    <!-- <div class="contentPgae2">
         <button type="button">ALWYAS TASTY BURGER</button>
         <h1>CHOOSE & ENJOY</h1>
         <p>Lorem ipsum dit quae excepturi atque aspernatur quisquam ratione omnis suscipit, aperiam explicabo eos
             corporis nostrum dolores, ullam earum! Vitae!</p>
-    </div>
+    </div> -->
 
-    <div class="contentPage3">
+    <!-- <div class="contentPage3">
         <div class="burgerCard">
             <img class="image3"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr3QxqTIyF9ZrWS99YdyZbxJL_WkYY_m1wZA&usqp=CAU"
@@ -112,9 +105,9 @@
             <P>Lorem ipsum dolor, debitis tempore andusdebitis tempore andus perferensi.</P>
             <button class="orderBtn">ORDER NOW</button>
         </div>
-    </div>
+    </div> -->
 
-    <div class="contentCard">
+    <!-- <div class="contentCard">
         <div  class="contentCardText">
             <h4>DISCOVER</h4>
             <h2>UPCOMIMG EVENTS</h2>
@@ -123,10 +116,9 @@
         <div class="contentCardImage">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJbE014JTGBcuLug_SSYXHh5bDDLx2GvaAjw4MM5O1vJd6zBaHtvrzgL_27IcQ3dJ6zfU&usqp=CAU" alt="burger">
         </div>
-    </div>
+    </div> -->
 
-    <div class="contentPage4">
-        <!-- <div> -->
+    <!-- <div class="contentPage4">
         <div class="contentPage4Image1">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxooGvF-IxEbPLB6KvMWdEnP9kU6C7cKtCxA&usqp=CAU"
                 alt="sideBurger">
@@ -141,9 +133,9 @@
                 alt="soas">
         </div>
         <div class="contentPage4Form">
-            <form >
+            <form>
                 <div class="contentPage4FormInput">
-                    <input type="text" placeholder="NAME" required >
+                    <input type="text" placeholder="NAME" required>
                     <input type="email" placeholder="EMAIL">
                 </div>
                 <div class="contentPage4FormInput">
@@ -151,9 +143,56 @@
                     <input type="text" placeholder="TIME" required>
                 </div>
                 <div class="contentPage4FormInput">
-                    <input type="text" placeholder="NAME" required>
-                    <!-- <button class="tableBtn" type="submit" >FIND A TABLE</button> -->
-                    <input class="tableBtn" type="submit" value="FIND A TABLE" >
+                    <input type="text" placeholder="PEOPLE" required>
+                    <select name="city" id="city" required>
+                        <option value="SELECT CITY" hidden>SELECT CITY</option>
+                        <option>BANGALORE</option>
+                        <option>MYSORE</option>
+                        <option>CHENNAI</option>
+                        <option>MUMBAI</option>
+                    </select>
+                </div>
+                <div class="contentPage4FormInput">
+                    <input list="tableNumber" required placeholder="TABLE NUMBER" required>
+                    <datalist id="tableNumber">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </datalist>
+                    <input title="max 5" type="text" name="numberOfPeople" id="numberOfPeople"
+                        placeholder="NUMBER OF PEOPLE" max="5" required>
+                </div>
+                <div class="contentPage4FormInput">
+                    <input type="date" name="date" id="date" required>
+                    <input type="time" name="time" id="time" required>
+                </div>
+                <div class="contentPage4FormInput radioBtnBorder">
+                    <div class="contentPage4FormInputRadio">
+                        <label for="water"> WATER BOTTLE</label>
+                    </div>
+                    <div class="contentPage4FormInputRadio ">
+                        <input type="radio" name="water" id="bislery">
+                        <label for="bislery">BISLERY</label>
+                        <input type="radio" name="water" id="kinley">
+                        <label for="kinley">KINLEY</label>
+                    </div>
+                </div>
+                <div class="contentPage4FormInput radioBtnBorder">
+                    <div class="contentPage4FormInputRadio">
+                        <label for="food">CHOOSE FOOD</label>
+                    </div>
+                    <div class="contentPage4FormInputRadio">
+                        <input type="checkbox" name="food" id="biriyani">
+                        <label for="biriyani">BIRIYANI</label>
+                        <input type="checkbox" name="food" id="kabab">
+                        <label for="kabab">KABAB</label>
+                    </div>
+                </div>
+                <div class="contentPage4FormInput ">
+                    <input class="tableBtn" type="submit" value="SUBMIT">
+                    <input class="tableBtn" type="reset" value="RESET">
                 </div>
             </form>
         </div>
@@ -161,12 +200,9 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZE5yvMY8vllmaK4u6KurCRrBUQiu7jf2vgQW2a3Y-SzH_7OXS_41hoeIm4te4C8z1Skc&usqp=CAU"
                 alt="plateburger">
         </div>
-
-        <!-- </div> -->
-    </div>
-
-    <div class="contentPage5">
-        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpxYYe8S4SUcYx__pNL-95ofantSxFc8RXbQ&usqp=CAU" alt="bgimage"> -->
+    </div> -->
+    
+    <!-- <div class="contentPage5">
         <div class="contentPage5Icon">
             <i id="burgerIcon2" class="fa-solid fa-burger"></i>
             <span>BURGER HOUSE</span>
@@ -208,7 +244,8 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
+
 </body>
 
 </html>

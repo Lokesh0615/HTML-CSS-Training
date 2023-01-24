@@ -60,7 +60,6 @@
     /* .contentPage3 */
     .contentPage3{
         flex-direction: column;
-        /* padding: 10px 30px; */
     }
     .burgerCard{
         padding: 20px; 
@@ -91,13 +90,18 @@
         
     }
     .contentPage5BottomRightIcon{
-       /* flex-direction: column; */
         justify-content: center;
     } 
     .contentPage5EmailTag{
         margin:0px;
     }
 
+}
+@media screen and (max-width:700px) {
+    .radioBtnBorder{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 #webPageTitleLeftContent {
@@ -110,7 +114,6 @@
 }
 
 #webPageTitleRightContent {
-    /* grid-area: 1/8/1/13; */
     text-align: right;
     font-size: small;
 }
@@ -146,7 +149,6 @@
 } 
 #sideText span{
     position: relative;
-    /* font-size:1vw; */
     font-size:clamp(7px, 1vw , 20px);
     padding: 5px;
     border: 1.5px dashed rgb(90, 25, 25);   
@@ -159,11 +161,8 @@
 }
 #sideText h2{
     font-size:clamp(22px, 3.5vw , 120px);
-    /* font-size: 3.5vw; */
     position: relative;
-    /* top: -110px; */
     top:clamp(-120px, -8.5vw, -40px);
-    /* top: clamp(-200px,-10vw, 0px); */
     text-shadow: 1.5px 1.5px  white;
 }
 
@@ -208,6 +207,7 @@
     margin-left: 1vw;
 }
 
+
 #contentPageRight{
     display: flex;
     flex-direction: column;
@@ -227,8 +227,6 @@
     color: whitesmoke;
     position: relative;
     top: -14.5vw;
-    /* top: -0.3%; */
-    /* top: clamp(-10%, -14.4vw, -100px); */
     
 }
 /* contentPgae2 */
@@ -237,7 +235,6 @@
     text-align: center;
     padding: 20px;
     border: 2px solid blue;
-    /* width: 65%; */
 }
 
 .contentPgae2 button{
@@ -256,22 +253,16 @@
     border: 2px solid red;
     display: flex;
     justify-content: space-around;
-    /* flex-direction: column; */
-    /* float: left; */
     height: auto;
-    /* width: auto; */
 }
 
 .burgerCard{
     text-align: center;
-    /* border: 2px solid red; */
-    /* padding: 50px; */
     padding: 5vw;
     min-width: 150px;  
 }
 .image3{
     width: 100%;
-    /* filter: drop-shadow(5px 2px 2px black); */
 }
 .orderBtn{
     border: none;
@@ -287,7 +278,6 @@
 /* contentcard */
 .contentCard{
     display: flex;
-    /* border: 2px solid black; */
     margin: 50px;
     padding: 10px;
     box-shadow: 8px 8px 6px rgb(221, 215, 215);
@@ -301,7 +291,6 @@
 .contentCardImage{
     margin: 20px;
     width: 50vw;
-    /* height: 100%; */
 }
 .contentCardImage img{
     width: 100%;
@@ -349,14 +338,31 @@
     justify-content: space-around;
     text-align: center;
 }
-.contentPage4FormInput input{
+.contentPage4FormInput input, select{
     width: 100%;
     border: 1px solid black;
     padding: 13px;
     margin: 10px;
 }
-.contentPage4FormInput input:hover{
+.contentPage4FormInput input:hover, select:hover{
     background-color: rgb(225, 216, 216);
+}
+
+.radioBtnBorder{
+    width: 47vw;
+    max-width: 97%;
+    padding: 13px;
+    margin: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+.contentPage4FormInputRadio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    
 }
 .tableBtn{
     width: 100%;
@@ -372,10 +378,8 @@
 }
 .contentPage4Image3{
     grid-area:2 /10/5/13;
-    position: relative;
-    /* right: -5vw; */
-   
-
+    display: flex;
+    align-items: flex-end;
 }
 .contentPage4Image3 img{
     width: 100%;
@@ -383,12 +387,17 @@
     min-height: 200px;
     border-top-left-radius: 70%;
     border-bottom-left-radius: 70%;
-    /* border-top-right-radius: 70%; */
-    /* border-bottom-right-radius: 70%; */
-    /* border-start-start-radius: 50%; */
     box-shadow: 10px 10px 10px  black;
-    clip: circle(50%, 0,0 );
-    
+}
+
+.bookTable{
+    width: 95%;
+    padding: 13px;
+    margin: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bolder;
 }
 
 
@@ -417,29 +426,22 @@
 .contentPage5ParagraphAndEmail{
     display: flex;
     justify-content: space-between;
-    /* padding-right: clamp(10px, 19vw, 200px); */
     margin: 00px 0px 80px;
 }
 #paragraph{
     width: 45%;
     min-width: 250px;
-    /* margin-right: 20%; */
     white-space: normal;
 
 }
 .contentPage5EmailTag{
-    /* margin: 5px 30px 0px 30px; */
-    /* display: flex; */
     position: relative;
-    /* text-decoration: none; */
-    /* right: -15vw; */
 }
 .contentPage5EmailTag a{
     text-decoration: none;
 }
 .contentPage5EmailTag i{
     color: white;
-    /* min-width: 50px; */
 }
 
 .contentPage5BottomContent{

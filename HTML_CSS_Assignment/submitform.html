@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./AssignmetWebPage.css">
+    <script src="https://kit.fontawesome.com/6ac93262d0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="homePageContainer">
+        <div id="webPageTitleLeftContent">
+            <i id="burgerIcon" class="fa-solid fa-burger"></i>
+            <span>BURGER HOUSE</span>
+        </div>
+        <div id="webPageTitleRightContent">
+            <i id="bikeIcon" class="fa-solid fa-motorcycle"></i>
+            <span>Express Delivery +1 234 567 890</span>
+        </div>
+        <nav id="navBar">
+            <div id="navBar-content">
+                <a href="./AssignmentWebPage.html">HOME</a>
+                <a href="./contentPage.html">MENU</a>
+                <a href="./ourStroty.html">OUR STORY</a>
+                <a href="./contactUs.html">CONTACT US</a>
+                <a href="./submitform.html">BOOK TABLE</a>
+            </div>
+        </nav>
+        <div id="sideText">
+            <span>IT IS A GOOD TIME FOR THE GREAT TASTE OF BURGERS</span>
+            <h1 id="bugerText">BURGER</h1>
+            <h2>WEEK</h2>
+        </div>
+        <div id="homePageBurgerImage">
+            <img src="./homepageburger.PNG" alt="burger image">
+        </div>
+    </div>
+
+    <div class="contentPage4">
+        <div class="contentPage4Image1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxooGvF-IxEbPLB6KvMWdEnP9kU6C7cKtCxA&usqp=CAU"
+                alt="sideBurger">
+        </div>
+
+        <div class="contentPage4Text">
+            <h4>RESERVATION</h4>
+            <h2>BOOOK YOUR TABLE</h2>
+        </div>
+        <div class="contentPage4Image2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBVBZpo_IinZXi-zxfEcPDMaj9gFzymsOEAQ&usqp=CAU"
+                alt="soas">
+        </div>
+        <div class="contentPage4Form">
+            <form>
+                <div class="contentPage4FormInput">
+                    <input type="text" placeholder="NAME" required>
+                    <input type="email" placeholder="EMAIL">
+                </div>
+                <div class="contentPage4FormInput">
+                    <input type="text" placeholder="DATE" required>
+                    <input type="text" placeholder="TIME" required>
+                </div>
+                <div class="contentPage4FormInput">
+                    <input type="tel" placeholder="NUMBER" required maxlength="10">
+                    <select name="city" id="city" required>
+                        <option value="SELECT CITY" hidden>SELECT CITY</option>
+                        <option>BANGALORE</option>
+                        <option>MYSORE</option>
+                        <option>CHENNAI</option>
+                        <option>MUMBAI</option>
+                    </select>
+                </div>
+                <div class="contentPage4FormInput">
+                    <input list="tableNumber" required placeholder="TABLE NUMBER" required>
+                    <datalist id="tableNumber">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </datalist>
+                    <input title="max 5" type="text" name="numberOfPeople" id="numberOfPeople"
+                        placeholder="NUMBER OF PEOPLE" max="5" required>
+                </div>
+                <div class="contentPage4FormInput">
+                    <input type="date" name="date" id="date" required>
+                    <input type="time" name="time" id="time" required>
+                </div>
+                <div class="contentPage4FormInput radioBtnBorder">
+                    <div class="contentPage4FormInputRadio">
+                        <label for="water"> WATER BOTTLE</label>
+                    </div>
+                    <div class="contentPage4FormInputRadio ">
+                        <input type="radio" name="water" id="bislery">
+                        <label for="bislery">BISLERY</label>
+                        <input type="radio" name="water" id="kinley">
+                        <label for="kinley">KINLEY</label>
+                    </div>
+                </div>
+                <div class="contentPage4FormInput radioBtnBorder">
+                    <div class="contentPage4FormInputRadio">
+                        <label for="food">CHOOSE FOOD</label>
+                    </div>
+                    <div class="contentPage4FormInputRadio">
+                        <input type="checkbox" name="food" id="biriyani">
+                        <label for="biriyani">BIRIYANI</label>
+                        <input type="checkbox" name="food" id="kabab">
+                        <label for="kabab">KABAB</label>
+                    </div>
+                </div>
+                <div class="contentPage4FormInput ">
+                    <input class="tableBtn" type="submit" value="SUBMIT">
+                    <input class="tableBtn" type="reset" value="RESET">
+                </div>
+            </form>
+        </div>
+        <div class="contentPage4Image3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZE5yvMY8vllmaK4u6KurCRrBUQiu7jf2vgQW2a3Y-SzH_7OXS_41hoeIm4te4C8z1Skc&usqp=CAU"
+                alt="plateburger">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
