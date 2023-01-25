@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibilty</title>
+
+    <style>
+        #main{
+            width: auto;
+            height: auto;
+            box-sizing: border-box;
+            background-color: rgb(163, 179, 179);
+        }
+        #div1{
+            width: 10%;
+            height: 60px;
+            background-color: aquamarine;
+        }
+        #div2{
+            visibility: hidden;
+            height: 60px;
+            width: 10%;
+            background-color: rgb(54, 47, 128);
+        }
+        #div3{
+            height: 60px;
+            width: 10%;
+            background-color: rgb(186, 35, 91);
+        }
+        #div4{
+            visibility:collapse;
+            height: 60px;
+            width: 10%;
+            background-color: rgb(216, 144, 44);
+        }
+        #div5{
+            height: 60px;
+            width: 10%;
+            background-color: rgb(30, 159, 25);
+        }
+
+        #navBar-content::after{
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="main">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+        
+    </div>
+    <div id="navBar-content">
+        <a href="./AssignmentWebPage.html">HOME</a>
+        <a href="./contentPage.html">MENU</a>
+        <a href="./ourStroty.html">OUR STORY</a>
+        <a href="./contactUs.html">CONTACT US</a>
+        <a href="./submitform.html">BOOK TABLE</a>
+    </div>
+</body>
+</html>

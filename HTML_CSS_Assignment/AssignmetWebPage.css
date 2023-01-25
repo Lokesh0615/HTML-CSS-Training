@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 .homePageContainer {
     display: grid;
@@ -72,15 +73,19 @@
     }
     /* .contentPage4 */
     .contentPage4Image1, .contentPage4Image2, .contentPage4Image3{
-        display: none;
+        visibility: hidden;
     }
 
     .contentPage4Form{
         width: 100%;
     }
-    .contentPage4FormInput{
+    .contentPage4FormInputRadio, .contentPage4FormInput{
         flex-direction: column;
         width: 100%;
+    }
+    .formButtonEdit{
+        display: flex;
+        flex-direction: column;
     }
 
     /* contentpage5 */
@@ -97,10 +102,16 @@
     }
 
 }
-@media screen and (max-width:700px) {
-    .radioBtnBorder{
+@media screen and (max-width:900px) {
+    .formButtonEdit{
         display: flex;
         flex-direction: column;
+        width: 48%;
+    }
+    .contentPage4FormInputRadio{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
     }
 }
 
@@ -226,7 +237,7 @@
     display: inline-block;
     color: whitesmoke;
     position: relative;
-    top: -14.5vw;
+    top:clamp(-205px, -14.5vw, -60px);
     
 }
 /* contentPgae2 */
@@ -324,11 +335,11 @@
     min-height: 200px;
 }
 .contentPage4Text{
-    grid-area: 1/2/2/ 12;
+    grid-area: 1/1/2/ 12;
     text-align: center;
 }
 .contentPage4Form{
-    grid-area: 2/4/3/10;
+    grid-area: 2/3/3/10;
     text-align: center;
 }
 .contentPage4FormInput{
@@ -338,31 +349,43 @@
     justify-content: space-around;
     text-align: center;
 }
-.contentPage4FormInput input, select{
+.contentPage4FormInput input, select, label{
     width: 100%;
     border: 1px solid black;
     padding: 13px;
     margin: 10px;
+    border-radius: 5px ;
 }
-.contentPage4FormInput input:hover, select:hover{
+.contentPage4FormInput input:hover, select:hover, .formButtonEdit label:hover{
     background-color: rgb(225, 216, 216);
 }
 
-.radioBtnBorder{
-    width: 47vw;
-    max-width: 97%;
+.contentPage4FormInputRadio{
+    display: inline-block;
+    justify-content: center;
     padding: 13px;
     margin: 10px;
+    width: 97%;
     border-width: 1px;
     border-style: solid;
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-}
-.contentPage4FormInputRadio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 97%;
+    border-radius: 5px;
     
+}
+.formRadioCheckbtn label{
+    border: none;
+}
+.radioBtnLabel{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-radius: 5px;
+}
+.formButtonEdit{
+    float: left;
+    display: flex;
+    width: 48%;
+    align-items: center;
 }
 .tableBtn{
     width: 100%;

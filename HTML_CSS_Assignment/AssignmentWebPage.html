@@ -8,6 +8,7 @@
     <title>BURGER HOUSE</title>
     <link rel="stylesheet" href="./AssignmetWebPage.css">
     <script src="https://kit.fontawesome.com/6ac93262d0.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -117,7 +118,7 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJbE014JTGBcuLug_SSYXHh5bDDLx2GvaAjw4MM5O1vJd6zBaHtvrzgL_27IcQ3dJ6zfU&usqp=CAU" alt="burger">
         </div>
     </div> -->
-
+    
     <!-- <div class="contentPage4">
         <div class="contentPage4Image1">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxooGvF-IxEbPLB6KvMWdEnP9kU6C7cKtCxA&usqp=CAU"
@@ -135,15 +136,15 @@
         <div class="contentPage4Form">
             <form>
                 <div class="contentPage4FormInput">
+                    <label for="name">NAME</label>
                     <input type="text" placeholder="NAME" required>
+                    <label for="name">EMAIL</label>
                     <input type="email" placeholder="EMAIL">
                 </div>
                 <div class="contentPage4FormInput">
-                    <input type="text" placeholder="DATE" required>
-                    <input type="text" placeholder="TIME" required>
-                </div>
-                <div class="contentPage4FormInput">
-                    <input type="text" placeholder="PEOPLE" required>
+                    <label for="name">NUMBER</label>
+                    <input type="tel" placeholder="NUMBER" required length="10">
+                    <label for="name">SELECT CITY</label>
                     <select name="city" id="city" required>
                         <option value="SELECT CITY" hidden>SELECT CITY</option>
                         <option>BANGALORE</option>
@@ -153,6 +154,7 @@
                     </select>
                 </div>
                 <div class="contentPage4FormInput">
+                    <label for="name">TABLE NUMBER</label>
                     <input list="tableNumber" required placeholder="TABLE NUMBER" required>
                     <datalist id="tableNumber">
                         <option>1</option>
@@ -161,36 +163,50 @@
                         <option>4</option>
                         <option>5</option>
                     </datalist>
+                    <label for="name">PEOPLE</label>
                     <input title="max 5" type="text" name="numberOfPeople" id="numberOfPeople"
                         placeholder="NUMBER OF PEOPLE" max="5" required>
                 </div>
                 <div class="contentPage4FormInput">
+                    <label for="name">DATE</label>
                     <input type="date" name="date" id="date" required>
+                    <label for="name">TIME</label>
                     <input type="time" name="time" id="time" required>
                 </div>
-                <div class="contentPage4FormInput radioBtnBorder">
-                    <div class="contentPage4FormInputRadio">
+                <div class="contentPage4FormInput formRadioCheckbtn">
+                    <div class="contentPage4FormInputRadio radioBtnLabel">
                         <label for="water"> WATER BOTTLE</label>
                     </div>
-                    <div class="contentPage4FormInputRadio ">
-                        <input type="radio" name="water" id="bislery">
-                        <label for="bislery">BISLERY</label>
-                        <input type="radio" name="water" id="kinley">
-                        <label for="kinley">KINLEY</label>
+                    <div class="contentPage4FormInputRadio">
+                        <div class="formButtonEdit">
+                            <input type="radio" name="water" id="bislery">
+                            <label for="bislery">BISLERY</label>
+                        </div>
+                        <div class="formButtonEdit">
+                            <input type="radio" name="water" id="kinley">
+                            <label for="kinley">KINLEY</label>
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="contentPage4FormInput radioBtnBorder">
-                    <div class="contentPage4FormInputRadio">
+                <div class="contentPage4FormInput formRadioCheckbtn">
+                    <div class="contentPage4FormInputRadio radioBtnLabel">
                         <label for="food">CHOOSE FOOD</label>
                     </div>
+                    
                     <div class="contentPage4FormInputRadio">
-                        <input type="checkbox" name="food" id="biriyani">
-                        <label for="biriyani">BIRIYANI</label>
-                        <input type="checkbox" name="food" id="kabab">
-                        <label for="kabab">KABAB</label>
+                        <div class="formButtonEdit">
+                            <input type="checkbox" name="food" id="biriyani">
+                            <label for="biriyani">BIRIYANI</label>
+                        </div>
+                        <div class="formButtonEdit">
+                            <input type="checkbox" name="food" id="kabab">
+                            <label for="kabab">KABAB</label>
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="contentPage4FormInput ">
+                <div class="contentPage4FormInput">
                     <input class="tableBtn" type="submit" value="SUBMIT">
                     <input class="tableBtn" type="reset" value="RESET">
                 </div>
@@ -201,7 +217,7 @@
                 alt="plateburger">
         </div>
     </div> -->
-    
+
     <!-- <div class="contentPage5">
         <div class="contentPage5Icon">
             <i id="burgerIcon2" class="fa-solid fa-burger"></i>
