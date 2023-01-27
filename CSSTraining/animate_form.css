@@ -9,38 +9,37 @@ div {
     margin: auto;
     margin-top: 150px;
     animation-name: example;
-    animation-duration: 1s;
-    animation-delay: 0s;
-    animation-direction: normal;
-    visibility: visible;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-direction: alternate;
     background-color: aqua;
-
 }
 
 @keyframes example {
     from {
         /* display: none; */
-        visibility: hidden;
+        /* visibility: hidden; */
         top: -150px;
          /* transition: all; */
-        height: 0px;
+        /* height: 0px; */
         /* background-color: rgb(199, 124, 26); */
         /* width: 0px;  */
-        /* transform: scale(1);
-        transition-duration: .1s;*/
+         /* transform: scale(1);
+        transition-duration: .1s; */
         /* transition-timing-function: ease;  */
     }
 
     to {
-        display: block;
+        /* display: block; */
         /* visibility: hidden; */
         top: 0px;
+        /* transform: scale(3); */
         /* transform: scale(2); */
         /* transform: translate(0px 150px); */
         /* transform: scale(0); */
-        /* transform-style: flat;
-        transition-duration: 4s;
-        transition-timing-function: ease-in-out; */
+        /* transform-style: flat; */
+         /* transition-duration: 4s; */
+         /*transition-timing-function: ease-in-out; */
     }
 
     /* 
