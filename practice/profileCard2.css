@@ -1,0 +1,54 @@
+.container{
+    width: 200px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    margin:  200px auto;
+}
+.cardfront, .cardBack{
+    width: 200px;
+    height:250px;
+    background: linear-gradient(to bottom right, rgb(159, 82, 210),  rgb(125, 58, 169),  rgb(100, 19, 69), rgb(167, 68, 6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* transition: all 1s ease-in-out ; */
+    /* float: left; */
+}
+
+.image1{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    object-fit: fill;
+}
+.image2{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    object-fit: fill;
+}
+.cardfront{
+    position: relative;
+    top: 50px;
+    transition: all 3s ease-in-out ;
+
+}
+.cardBack{
+    position: relative;
+    top: -200px;
+    z-index: -1;
+    transition: all 3s ease-in-out ;
+
+}
+.container:hover .cardBack{
+    display: flex;
+    z-index: -1;
+    transform: translate(30px, 30px);
+}
+.container:hover .cardfront{
+    transform: translate(-30px, -30px);
+
+}
